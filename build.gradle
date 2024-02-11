@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group = 'ua.zinchenko'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.4'
+    implementation 'com.jayway.jsonpath:json-path:2.9.0'
+    implementation 'org.yaml:snakeyaml:1.8'
+}
