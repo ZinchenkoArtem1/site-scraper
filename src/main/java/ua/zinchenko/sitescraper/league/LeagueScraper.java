@@ -4,7 +4,7 @@ import com.jayway.jsonpath.Configuration;
 import com.jayway.jsonpath.Filter;
 import com.jayway.jsonpath.JsonPath;
 import com.jayway.jsonpath.TypeRef;
-import ua.zinchenko.sitescraper.LeonBetAsyncHttpClient;
+import ua.zinchenko.sitescraper.LeonBetHttpClient;
 
 import java.util.List;
 
@@ -21,9 +21,9 @@ public class LeagueScraper {
             where("top").is(true)
     );
     private final Configuration configuration;
-    private final LeonBetAsyncHttpClient httpClient;
+    private final LeonBetHttpClient httpClient;
 
-    public LeagueScraper(Configuration configuration, LeonBetAsyncHttpClient httpClient) {
+    public LeagueScraper(Configuration configuration, LeonBetHttpClient httpClient) {
         this.configuration = configuration;
         this.httpClient = httpClient;
     }

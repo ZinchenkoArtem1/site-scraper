@@ -3,7 +3,7 @@ package ua.zinchenko.sitescraper.event;
 import com.jayway.jsonpath.Configuration;
 import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
-import ua.zinchenko.sitescraper.LeonBetAsyncHttpClient;
+import ua.zinchenko.sitescraper.LeonBetHttpClient;
 import ua.zinchenko.sitescraper.event.dto.EventDto;
 import ua.zinchenko.sitescraper.event.entity.Event;
 
@@ -12,10 +12,10 @@ import java.net.http.HttpResponse;
 public class EventScraper {
 
     private final Configuration configuration;
-    private final LeonBetAsyncHttpClient httpClient;
+    private final LeonBetHttpClient httpClient;
     private final EventConvertor eventConvertor;
 
-    public EventScraper(Configuration configuration, LeonBetAsyncHttpClient httpClient,
+    public EventScraper(Configuration configuration, LeonBetHttpClient httpClient,
                         EventConvertor eventConvertor) {
         this.configuration = configuration;
         this.httpClient = httpClient;

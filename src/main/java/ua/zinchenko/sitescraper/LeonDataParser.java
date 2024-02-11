@@ -15,7 +15,7 @@ import java.util.List;
 public class LeonDataParser {
 
     public static void main(String[] args) {
-        LeonBetAsyncHttpClient httpClient = new LeonBetAsyncHttpClient();
+        LeonBetHttpClient httpClient = new LeonBetHttpClient();
 
         LeagueScraper leagueScraper = new LeagueScraper(JsonPathConfig.getConfiguration(), httpClient);
         EventScraper eventScraper = new EventScraper(JsonPathConfig.getConfiguration(), httpClient, new EventConvertor());

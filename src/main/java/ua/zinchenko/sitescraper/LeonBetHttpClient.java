@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 import java.time.Duration;
 import java.time.temporal.ChronoUnit;
 
-public class LeonBetAsyncHttpClient {
+public class LeonBetHttpClient {
 
     private final HttpClient client = HttpClient.newBuilder()
             .build();

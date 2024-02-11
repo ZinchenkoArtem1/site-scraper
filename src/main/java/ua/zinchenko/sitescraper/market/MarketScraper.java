@@ -3,7 +3,7 @@ package ua.zinchenko.sitescraper.market;
 import com.jayway.jsonpath.Configuration;
 import com.jayway.jsonpath.JsonPath;
 import com.jayway.jsonpath.TypeRef;
-import ua.zinchenko.sitescraper.LeonBetAsyncHttpClient;
+import ua.zinchenko.sitescraper.LeonBetHttpClient;
 import ua.zinchenko.sitescraper.event.entity.Event;
 import ua.zinchenko.sitescraper.market.domain.Market;
 import ua.zinchenko.sitescraper.market.dto.MarketDto;
@@ -13,10 +13,10 @@ import java.util.List;
 public class MarketScraper {
 
     private final Configuration configuration;
-    private final LeonBetAsyncHttpClient httpClient;
+    private final LeonBetHttpClient httpClient;
     private final MarketConvertor marketConvertor;
 
-    public MarketScraper(Configuration configuration, LeonBetAsyncHttpClient httpClient,
+    public MarketScraper(Configuration configuration, LeonBetHttpClient httpClient,
                          MarketConvertor marketConvertor) {
         this.configuration = configuration;
         this.httpClient = httpClient;
